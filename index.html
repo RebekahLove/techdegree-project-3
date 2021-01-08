@@ -19,11 +19,11 @@
         <div class="container">
             <div id="intro">
                 <h2>Signup for our newsletter</h2>
-                <p>Get the latest news on how your code is doing right in your inbox</p>
+                <p class="intro">Get the latest news on how your code is doing right in your inbox</p>
             </div>
 
             <form>
-                <fieldset>
+                <fieldset class="contact">
                     <legend>Contact Information</legend>
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="user-name">
@@ -97,18 +97,18 @@
                     <div>
                     <legend>Newsletter</legend>
                         <p>Select the newsletters you would like to receive</p>
-                        <input type="checkbox" id="html-news" name="html-news">
+                        <input type="checkbox" id="html-news" name="newsletter" value="html-news">
                         <label for="html-news">HTML News</label>
-                        <input type="checkbox" id="css-news" name="css-news">
+                        <input type="checkbox" id="css-news" name="newsletter" value="css-news">
                         <label for="css-news">CSS News</label>
-                        <input type="checkbox" id="javascript-news" name="javascript-news">
+                        <input type="checkbox" id="javascript-news" name="newsletter" value="javascript-news">
                         <label for="javascript-news">Javascript News</label>
                     </div>
                     <div>
                         <p>Newsletter format</p>
-                        <input type="radio" id="html" name="html">                
+                        <input type="radio" id="html" name="format" value="html">                
                         <label for="html">HTML</label>
-                        <input type="radio" id="plain-text" name="plain-text">
+                        <input type="radio" id="plain-text" name="format" value="plain-text">
                         <label for="plain-text">Plain text</label>
                     </div>
                     <div>
