@@ -40,7 +40,6 @@ form {
   border-top: 2px solid rgb(50, 62, 87);
   display: flex;
   flex-flow: column wrap;
-
 }
 
 fieldset {
@@ -75,6 +74,21 @@ legend {
   padding-bottom: 30px; 
   border-bottom: 2px solid rgb(50, 62, 87);
  }
+
+.contact label,
+.contact input,
+.contact select {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+
+.contact input,
+.contact select {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 3px;
+}
 
 
 
