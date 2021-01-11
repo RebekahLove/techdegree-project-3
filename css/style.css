@@ -77,16 +77,19 @@ legend {
 
 .contact label,
 .contact input,
-.contact select,
-.contact input:last-child {
+.contact select {
   display: block;
-  padding: 5px;
-  margin: 5px;
+  padding: 5px 0;
+  margin: 5px 0 16px 0;
+}
+
+.contact input:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .contact input,
-select#state {
-  margin-bottom: 16px;
+.contact select{
   font-size: 18px;
   color: rgb(50, 62, 87);
 }
@@ -97,7 +100,7 @@ select#state {
   border: none;
   border-radius: 3px;
   height: 50px;
-  width: 98%
+  width: 100%;
 }
 
 input#name::placeholder,
@@ -113,9 +116,12 @@ input#email::placeholder {
   scrollbar-arrow-color: rgb(50, 62, 87);
 } */
 
-
 input#zip {
   max-width: 50%;
+}
+
+.news p {
+  margin-top: 0;
 }
 
 
