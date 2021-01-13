@@ -55,13 +55,9 @@ legend {
   padding: 30px 0 18px;
 }
 
-
-
 /* ================================= 
   Base Layout Styles
 ==================================== */
-
-/* ---- Layout Containers ---- */
 
 .intro {
   text-align: center;
@@ -70,10 +66,12 @@ legend {
   padding-bottom: 35px;
   border-bottom: 4px solid rgb(50, 62, 87);
 }
- .contact {
+/* ---- Contact Information Section ---- */
+
+.contact {
   padding-bottom: 30px; 
   border-bottom: 2px solid rgb(50, 62, 87);
- }
+}
 
 .contact label,
 .contact input,
@@ -98,7 +96,7 @@ legend {
 .contact select {
   background-color: #f1f1f1;
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   height: 50px;
   width: 100%;
 }
@@ -111,18 +109,40 @@ input#email::placeholder {
   color: rgb(199, 197, 197);
 }
 
-/* .contact select {
-  color: rgb(161, 161, 161);
-  scrollbar-arrow-color: rgb(50, 62, 87);
-} */
+.select {
+  margin: 0 0 10px;
+}
 
 input#zip {
   max-width: 50%;
 }
 
-.news p {
-  margin-top: 0;
+/* ---- Newsletter Section ---- */
+
+.news div {
+  margin: 8px 0;
+  padding: 5px 0;
 }
+
+.format {
+  padding-top: 8px;
+}
+
+.news label {
+  padding-left: 10px;
+}
+
+/* ---- Other Topics Section ---- */
+
+#textbox {
+  padding: 5px 0 0;
+  margin: 20px 0 10px;
+  width: 100%;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+}
+
 
 /* ================================= 
   Media Queries
