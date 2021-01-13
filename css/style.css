@@ -87,13 +87,9 @@ legend {
 }
 
 .contact input,
-.contact select{
+.contact select {
   font-size: 18px;
   color: rgb(50, 62, 87);
-}
-
-.contact input,
-.contact select {
   background-color: #f1f1f1;
   border: none;
   border-radius: 4px;
@@ -103,14 +99,10 @@ legend {
 
 input#name::placeholder,
 input#email::placeholder {
-  font-size: 13px;
-  text-align: right;
+  font-size: 14px;
   font-style: italic;
+  text-align: end;
   color: rgb(199, 197, 197);
-}
-
-.select {
-  margin: 0 0 10px;
 }
 
 input#zip {
@@ -118,6 +110,9 @@ input#zip {
 }
 
 /* ---- Newsletter Section ---- */
+.choose {
+  margin: 0 0 15px;
+}
 
 .news div {
   margin: 8px 0;
@@ -134,15 +129,42 @@ input#zip {
 
 /* ---- Other Topics Section ---- */
 
-#textbox {
-  padding: 5px 0 0;
-  margin: 20px 0 10px;
+fieldset.topics {
+  margin: 15px 0 25px;
+}
+
+.topics #textbox {
+  margin-top: 15px;
   width: 100%;
   background-color: #f1f1f1;
   border: none;
   border-radius: 4px;
 }
 
+/* ----  Button  ---- */
+
+button {
+  border: none;
+  line-height: 2.5;
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  background-color: #06b9b0 ;
+}
+
+/* ----  Footer  ---- */
+
+footer {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px ;
+  color: rgb(167, 167, 167);
+
+}
 
 /* ================================= 
   Media Queries
