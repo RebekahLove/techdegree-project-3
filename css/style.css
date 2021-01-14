@@ -101,7 +101,10 @@ legend {
 }
 
 input#name::placeholder,
-input#email::placeholder {
+input#email::placeholder,
+input#address1::placeholder,
+input#city::placeholder,
+input#zip::placeholder {
   font-size: 14px;
   font-style: italic;
   text-align: end;
@@ -181,19 +184,13 @@ button:active {
   outline-color: rgb(50, 62, 87);
 }
 
-
-
-
 /* ================================= 
   Media Queries
 ==================================== */
-
-/* ----  Header/Navigation  ---- */
-
-/* ----  Footer/Navigation  ---- */
+@media (min-width: 768px) {
 
 
-
+}
 
 
 
