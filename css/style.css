@@ -1,7 +1,6 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-
 * {
   box-sizing: border-box;
 }
@@ -52,13 +51,12 @@ legend {
   font-size: 20px;
   color: rgb(50, 62, 87);
   font-weight: bold;
-  padding: 30px 0 18px;
+  padding: 30px 0 5px;
 }
 
 /* ================================= 
   Base Layout Styles
 ==================================== */
-
 .intro {
   text-align: center;
   color: rgb(199, 197, 197);
@@ -66,19 +64,24 @@ legend {
   padding-bottom: 35px;
   border-bottom: 4px solid rgb(50, 62, 87);
 }
-/* ---- Contact Information Section ---- */
 
+/* ---- Contact Information Section ---- */
 .contact {
   padding-bottom: 30px; 
   border-bottom: 2px solid rgb(50, 62, 87);
 }
 
-.contact label,
+.contact label {
+  display: block;
+  padding: 5px 0;
+  margin: 20px 0 5px 0;
+}
+
 .contact input,
 .contact select {
   display: block;
-  padding: 5px 0;
-  margin: 5px 0 16px 0;
+  padding: 0;
+  margin: 0;
 }
 
 .contact input:last-child {
@@ -111,7 +114,7 @@ input#zip {
 
 /* ---- Newsletter Section ---- */
 .choose {
-  margin: 0 0 15px;
+  margin: 15px 0;
 }
 
 .news div {
@@ -128,7 +131,6 @@ input#zip {
 }
 
 /* ---- Other Topics Section ---- */
-
 fieldset.topics {
   margin: 15px 0 25px;
 }
@@ -142,7 +144,6 @@ fieldset.topics {
 }
 
 /* ----  Button  ---- */
-
 button {
   border: none;
   line-height: 2.5;
@@ -157,14 +158,31 @@ button {
 }
 
 /* ----  Footer  ---- */
-
 footer {
   text-align: center;
   font-style: italic;
   font-size: 14px ;
   color: rgb(167, 167, 167);
-
 }
+
+/* ----  Focus/Active  ---- */
+input:focus,
+select:focus,
+textarea:focus {
+  outline-color: rgb(50, 62, 87);
+}
+
+button:hover {
+  background-color: #06dbd1;
+}
+
+button:active {
+  background-color: #05879e;
+  outline-color: rgb(50, 62, 87);
+}
+
+
+
 
 /* ================================= 
   Media Queries
