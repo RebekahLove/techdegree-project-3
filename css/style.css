@@ -207,7 +207,6 @@ button:active {
   outline-color: #323e57;
 }
 
-
 /* ================================= 
   Media Queries
 ==================================== */
@@ -222,6 +221,10 @@ button:active {
   .contact select {
     width: 75%;
   }
+
+  .zip-code{
+    width: 50%;
+  }
   
   .full-name,
   .email-address,
@@ -233,8 +236,7 @@ button:active {
     display: flex;
     justify-content: space-between;
     padding: 5px 0;
-    margin: 20px 0 5px 0;
+    margin: 10px 0 5px 0;
   }
-
 
 }
