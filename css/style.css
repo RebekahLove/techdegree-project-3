@@ -218,36 +218,23 @@ button:active {
     margin: auto;
   }
 
-  /* .contact label,
-  .contact input,
-  .contact select {
-    display: inline;
-   
-  } */
-
-  /* .contact label {
-    align-self: start;
-    justify-content: right;
-  }
-
   .contact input,
   .contact select {
     width: 75%;
-    align-self: end;
-  } */
+  }
   
-
-
-
+  .full-name,
+  .email-address,
+  .phone-number,
+  .street-address,
+  .city,
+  .state,
+  .zip-code {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    margin: 20px 0 5px 0;
+  }
 
 
 }
-
-
-
-
-
-
-
-
-
