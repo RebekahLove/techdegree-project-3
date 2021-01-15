@@ -9,7 +9,8 @@ body {
   margin: 0;
   padding: 0;  
   font-family: 'Castoro', serif;
-  color: rgba(50, 62, 87, 0.733);
+  color: #323e57;
+  background-color: #b3ccf1;
 }
 
 h1 {
@@ -22,13 +23,13 @@ h2 {
   margin: 25px 0 15px;
   text-align: center;
   font-size: 20px;
-  color: rgb(50, 62, 87);
+  color: #77213e;
 }
 
 header {
   text-align: center;
   color: white;
-  background-color: rgb(50, 62, 87);
+  background-color: #323e57;
 }
 
 main {
@@ -36,7 +37,7 @@ main {
 }
 
 form {
-  border-top: 2px solid rgb(50, 62, 87);
+  border-top: 2px solid #323e57;
   display: flex;
   flex-flow: column wrap;
 }
@@ -49,7 +50,7 @@ fieldset {
 
 legend {
   font-size: 20px;
-  color: rgb(50, 62, 87);
+  color: #77213e;
   font-weight: bold;
   padding: 30px 0 5px;
 }
@@ -59,16 +60,16 @@ legend {
 ==================================== */
 .intro {
   text-align: center;
-  color: rgb(199, 197, 197);
+  color: #ffe4e1;
   margin: 0 0 2px 0;
   padding-bottom: 35px;
-  border-bottom: 4px solid rgb(50, 62, 87);
+  border-bottom: 4px solid #323e57;
 }
 
 /* ---- Contact Information Section ---- */
 .contact {
   padding-bottom: 30px; 
-  border-bottom: 2px solid rgb(50, 62, 87);
+  border-bottom: 2px solid #323e57;
 }
 
 .contact label {
@@ -92,8 +93,8 @@ legend {
 .contact input,
 .contact select {
   font-size: 18px;
-  color: rgb(50, 62, 87);
-  background-color: #f1f1f1;
+  color: #323e57;
+  background-color: #dde2dd;
   border: none;
   border-radius: 4px;
   height: 50px;
@@ -108,7 +109,11 @@ input#zip::placeholder {
   font-size: 14px;
   font-style: italic;
   text-align: end;
-  color: rgb(199, 197, 197);
+  color: #615f5f;
+}
+
+#state {
+  color: #615f5f;
 }
 
 input#zip {
@@ -118,6 +123,7 @@ input#zip {
 /* ---- Newsletter Section ---- */
 .choose {
   margin: 15px 0;
+  color: #ffe4e1;
 }
 
 .news div {
@@ -127,10 +133,15 @@ input#zip {
 
 .format {
   padding-top: 8px;
+  font-weight: bold;
 }
 
 .news label {
   padding-left: 10px;
+}
+
+p[class*="format"] {
+  color: #77213e;
 }
 
 /* ---- Other Topics Section ---- */
@@ -138,10 +149,14 @@ fieldset.topics {
   margin: 15px 0 25px;
 }
 
+label[for*="textbox"] {
+  color:#ffe4e1;
+}
+
 .topics #textbox {
   margin-top: 15px;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #dde2dd;
   border: none;
   border-radius: 4px;
 }
@@ -157,7 +172,7 @@ button {
   text-align: center;
   color: white;
   border-radius: 5px;
-  background-color: #06b9b0 ;
+  background-color: #18a19b ;
 }
 
 /* ----  Footer  ---- */
@@ -165,29 +180,65 @@ footer {
   text-align: center;
   font-style: italic;
   font-size: 14px ;
-  color: rgb(167, 167, 167);
+  color: #615f5f;
 }
 
-/* ----  Focus/Active  ---- */
+/* ----  Focus/Active/Transistions/Checked ---- */
 input:focus,
 select:focus,
-textarea:focus {
-  outline-color: rgb(50, 62, 87);
+#textbox:focus {
+  outline-color: #323e57;
+  background-color: lemonchiffon;
+  transition: all .8s;
+}
+
+.news input[type="checkbox"]:checked,
+.news input[type="radio"]:checked {
+  box-shadow: 0 0 0 5px  #77213e;
+  border-radius: 8px; 
 }
 
 button:hover {
-  background-color: #06dbd1;
+  background-color: #05879e;
 }
 
 button:active {
-  background-color: #05879e;
-  outline-color: rgb(50, 62, 87);
+  background-color: #03504c;
+  outline-color: #323e57;
 }
+
 
 /* ================================= 
   Media Queries
 ==================================== */
 @media (min-width: 768px) {
+    
+  main {
+    width: 40%;
+    margin: auto;
+  }
+
+  /* .contact label,
+  .contact input,
+  .contact select {
+    display: inline;
+   
+  } */
+
+  /* .contact label {
+    align-self: start;
+    justify-content: right;
+  }
+
+  .contact input,
+  .contact select {
+    width: 75%;
+    align-self: end;
+  } */
+  
+
+
+
 
 
 }
