@@ -145,8 +145,9 @@ p[class*="format"] {
 }
 
 /* ---- Other Topics Section ---- */
-fieldset.topics {
-  margin: 15px 0 25px;
+
+div.topics{
+  margin: 20px 0 25px;
 }
 
 label[for*="textbox"] {
